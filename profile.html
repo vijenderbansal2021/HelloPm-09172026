@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vijender Bansal — Insurance AI Product Manager, Senior Product Owner and Senior Business Analyst.">
+<title>Vijender Bansal | Insurance AI Product Manager</title>
+<style>
+:root{
+  --bg:#f7f8fc;--surface:#fff;--ink:#111827;--muted:#667085;--line:#e6e8ef;
+  --accent:#3157d5;--accent2:#6d5dfc;--soft:#eef2ff;--dark:#0d1220;
+  --shadow:0 18px 50px rgba(17,24,39,.08);--radius:22px;--max:1160px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(247,248,252,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(230,232,239,.8)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.04em;font-size:20px}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:28px;font-size:14px;color:#475467}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:#fff;font-weight:650}
+.hero{padding:92px 0 78px;background:
+radial-gradient(circle at 85% 18%,rgba(109,93,252,.16),transparent 30%),
+radial-gradient(circle at 12% 25%,rgba(49,87,213,.12),transparent 28%)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:var(--accent);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:750;margin-bottom:22px}
+.dot{width:7px;height:7px;background:#35b36f;border-radius:50%;box-shadow:0 0 0 5px rgba(53,179,111,.12)}
+h1{font-size:clamp(46px,7vw,78px);line-height:.98;letter-spacing:-.065em;max-width:760px}
+.gradient{background:linear-gradient(110deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-copy{font-size:19px;color:var(--muted);max-width:690px;margin:28px 0 32px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 19px;border-radius:12px;font-size:14px;font-weight:750;border:1px solid var(--line);background:#fff}
+.btn.primary{background:var(--dark);color:#fff;border-color:var(--dark)}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(17,24,39,.1)}
+.hero-card{background:var(--dark);color:#fff;border-radius:28px;padding:30px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero-card:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:linear-gradient(135deg,#3157d5,#8b7cff);right:-80px;top:-80px;opacity:.7}
+.monogram{width:82px;height:82px;border-radius:22px;display:grid;place-items:center;font-size:27px;font-weight:850;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);position:relative}
+.hero-card h3{font-size:22px;margin:28px 0 5px;position:relative}
+.hero-card p{color:#b8c0d2;font-size:14px;position:relative}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:50px;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.stat{background:#fff;padding:24px}
+.stat strong{display:block;font-size:28px;letter-spacing:-.04em}
+.stat span{font-size:13px;color:var(--muted)}
+section{padding:90px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:800;margin-bottom:9px}
+h2{font-size:40px;letter-spacing:-.045em;line-height:1.08}
+.section-intro{max-width:520px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:0 8px 30px rgba(17,24,39,.035)}
+.panel p{color:#475467}
+.capabilities{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:20px}
+.cap{padding:17px;border-radius:15px;background:#f7f8fc;border:1px solid #edf0f5;font-size:14px;font-weight:700}
+.cap small{display:block;color:var(--muted);font-weight:500;margin-top:4px}
+.timeline{position:relative;margin-top:15px}
+.timeline:before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.role{position:relative;padding:0 0 38px 38px}
+.role:last-child{padding-bottom:0}
+.role:before{content:"";position:absolute;left:4px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--soft)}
+.role-top{display:flex;justify-content:space-between;gap:20px;align-items:start}
+.role h3{font-size:20px;letter-spacing:-.02em}
+.company{color:var(--accent);font-weight:750;font-size:14px;margin-top:2px}
+.date{font-size:12px;color:var(--muted);white-space:nowrap}
+.role ul{margin:13px 0 0 17px;color:#667085;font-size:14px}
+.role li{margin:5px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+.tag{padding:5px 9px;background:#f1f3f8;border-radius:999px;color:#596275;font-size:11px;font-weight:700}
+.expertise{background:var(--dark);color:#fff}
+.expertise .kicker{color:#9daaff}
+.expertise .section-intro{color:#aeb7c9}
+.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.expert{padding:27px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.045);border-radius:20px}
+.expert-number{font-size:12px;color:#9daaff;font-weight:800}
+.expert h3{margin:35px 0 7px;font-size:19px}
+.expert p{color:#aeb7c9;font-size:14px}
+.education-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.edu{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px}
+.edu strong{display:block;font-size:16px}
+.edu span{font-size:13px;color:var(--muted)}
+.contact{padding:100px 0}
+.contact-card{background:linear-gradient(125deg,#101625,#20294a);color:#fff;border-radius:30px;padding:52px;display:flex;justify-content:space-between;gap:40px;align-items:end}
+.contact-card h2{max-width:650px}
+.contact-card p{color:#b9c1d1;margin-top:13px}
+.contact-links{display:flex;flex-direction:column;gap:10px;min-width:240px}
+.contact-link{padding:12px 15px;border:1px solid rgba(255,255,255,.14);border-radius:12px;color:#e8ebf3;font-size:14px}
+footer{padding:28px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer .container{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){
+ .hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding-top:65px}
+ .hero-card{max-width:520px}.expertise-grid{grid-template-columns:1fr 1fr}
+ .section-head{display:block}.section-intro{margin-top:14px}.contact-card{display:block;padding:35px}
+ .contact-links{margin-top:28px}.nav-links{display:none}
+}
+@media(max-width:580px){
+ .container{width:min(var(--max),calc(100% - 28px))}section{padding:65px 0}
+ h2{font-size:33px}.stats{grid-template-columns:1fr}.capabilities,.education-grid,.expertise-grid{grid-template-columns:1fr}
+ .role-top{display:block}.date{display:block;margin-top:5px}.hero-copy{font-size:17px}
+ .contact-card{border-radius:22px}.contact{padding:65px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#top">VB<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#credentials">Credentials</a>
+    </div>
+    <a class="nav-cta" href="#contact">Let's connect</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Insurance × AI × Product</div>
+      <h1>Building better insurance products through <span class="gradient">technology &amp; customer insight.</span></h1>
+      <p class="hero-copy">Vijender Bansal is an Insurance AI Product Manager, Senior Product Owner and Senior Business Analyst with 20+ years of experience turning complex business needs into practical technology solutions.</p>
+      <div class="actions">
+        <a class="btn primary" href="#experience">Explore my experience</a>
+        <a class="btn" href="mailto:vijenderbansal@yahoo.com">Email me</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>20+</strong><span>Years in Insurance</span></div>
+        <div class="stat"><strong>5+</strong><span>Insurance domains</span></div>
+        <div class="stat"><strong>3</strong><span>Core product roles</span></div>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="monogram">VB</div>
+      <h3>Product leadership with insurance depth.</h3>
+      <p>AI Product Management · Product Ownership · Business Analysis · Digital Transformation</p>
+    </aside>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">01 — About</div><h2>From business problem<br>to usable product.</h2></div>
+      <p class="section-intro">A career spanning Retirement, Life &amp; Annuities, Commercial &amp; Personal Lines, Specialty Insurance and BFS—with a consistent focus on transformation and delivery.</p>
+    </div>
+    <div class="about-grid">
+      <div class="panel">
+        <p>Results-driven IT Services professional specializing in business-to-technology transformation. Experienced in digital transformation, new product introduction, market expansion and state-by-state rollouts, with a track record of supporting business goals such as increased written premiums and operating cost reductions.</p>
+        <br>
+        <p>Known for working closely with customers and delivery teams, aligning programs and projects with business objectives, and capturing the “Voice of the Customer” at critical points in the product journey.</p>
+      </div>
+      <div class="panel">
+        <div class="kicker">Core capabilities</div>
+        <div class="capabilities">
+          <div class="cap">Product Strategy<small>Vision, goals &amp; roadmap</small></div>
+          <div class="cap">AI Product Management<small>AI-focused product development</small></div>
+          <div class="cap">Business Analysis<small>Requirements &amp; process discovery</small></div>
+          <div class="cap">Agile / SAFe<small>Product &amp; delivery leadership</small></div>
+          <div class="cap">User Experience<small>User journeys &amp; stakeholder needs</small></div>
+          <div class="cap">Transformation<small>Enterprise modernization</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">02 — Experience</div><h2>A 20+ year journey<br>across insurance.</h2></div>
+      <p class="section-intro">Progressing from product support and underwriting into senior business analysis, consulting, product ownership and AI product management.</p>
+    </div>
+    <div class="panel timeline">
+
+      <article class="role">
+        <div class="role-top"><div><h3>AI Product Manager / Senior Product Owner</h3><div class="company">Genpact · Specialty Insurance</div></div><div class="date">Oct 2024 — Present</div></div>
+        <ul>
+          <li>AI Product Manager / Senior Product Owner supporting Ryan Specialty.</li>
+          <li>Supporting AI product development and the Vertafore AIM &amp; ImageRight and Insurity ConceptOne application value streams.</li>
+          <li>Working across specialty insurance products and solutions serving brokers, MGAs/MGUs, retail agents and carriers.</li>
+        </ul>
+        <div class="tags"><span class="tag">AI Product</span><span class="tag">Specialty Insurance</span><span class="tag">ConceptOne</span><span class="tag">AIM</span></div>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Product Owner / Manager</h3><div class="company">NTT DATA · Retirement Digital Consulting for TIAA</div></div><div class="date">Jul 2021 — Oct 2024</div></div>
+        <ul>
+          <li>Led, directed and developed product teams to achieve product strategies and goals.</li>
+          <li>Analyzed data and made recommendations to improve product/company P&amp;L.</li>
+          <li>Led projects from inception through implementation and conducted requirements elicitation with client SMEs and business users.</li>
+          <li>Defined project scope, vision and objectives.</li>
+        </ul>
+        <div class="tags"><span class="tag">Product Management</span><span class="tag">Retirement</span><span class="tag">TIAA</span></div>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Senior Business Analyst</h3><div class="company">Sagitec Solutions · Retirements Consulting</div></div><div class="date">Oct 2020 — Jul 2021</div></div>
+        <ul>
+          <li>Conducted requirements elicitation with client SMEs and business users.</li>
+          <li>Interfaced with SMEs and QA teams while negotiating priorities and deliverables with client teams.</li>
+        </ul>
+        <div class="tags"><span class="tag">Business Analysis</span><span class="tag">Retirement</span></div>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Sr Consultant — Manager</h3><div class="company">Cognizant Technology Solutions</div></div><div class="date">Nov 2011 — Sep 2020</div></div>
+        <ul>
+          <li>Worked across multiple major Insurance &amp; BFS clients as Product Owner, Solution Architect, Lead BA and Project Lead.</li>
+          <li>Mapped user journeys and collaborated with UI/UX designers to align experiences with stakeholder expectations.</li>
+          <li>Led workshops, business process modeling, data modeling and interface analysis.</li>
+          <li>Worked as Scrum Master on two major Agile transformation projects using SAFe.</li>
+          <li>Managed governance, estimates, plans and executive status reporting.</li>
+        </ul>
+        <div class="tags"><span class="tag">P&amp;C</span><span class="tag">Life</span><span class="tag">BFS</span><span class="tag">SAFe</span><span class="tag">UX</span></div>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Business Solution Specialist</h3><div class="company">Coforge</div></div><div class="date">Jan 2008 — Oct 2011</div></div>
+        <ul>
+          <li>Worked with multiple Insurance clients across Property &amp; Casualty and Life &amp; Annuities.</li>
+          <li>Led BA work for producer solutions and requirements workshops for new business and underwriting solutions.</li>
+          <li>Supported web-based Duck Creek applications for Business Owners, Workers Comp and Auto Insurance.</li>
+          <li>Worked on LIDP DB2 and Datacom conversion and policy administration support.</li>
+        </ul>
+        <div class="tags"><span class="tag">P&amp;C</span><span class="tag">Duck Creek</span><span class="tag">Underwriting</span><span class="tag">Conversion</span></div>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Senior Business Analyst</h3><div class="company">DXC Technology</div></div><div class="date">Feb 2006 — Jan 2008</div></div>
+        <ul><li>Functional specification, solution delivery, maintenance and production support for Vantage-One, RPS, DSS and related client subsystems.</li></ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Assistant Manager — Underwriting</h3><div class="company">HSBC</div></div><div class="date">Mar 2003 — Feb 2006</div></div>
+        <ul>
+          <li>Core team member responsible for transitioning medical underwriting processes from Bristol, UK.</li>
+          <li>Subject matter expert on medical underwriting and member of an underwriting-engine development team.</li>
+          <li>Executed UAT and trained, coached and mentored team members.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Product Support</h3><div class="company">ICICI Prudential Life Insurance Company Limited</div></div><div class="date">Jan 2001 — Feb 2003</div></div>
+        <ul>
+          <li>Business requirements review, test-plan/test-case preparation, system and regression testing.</li>
+          <li>Executed UAT during variable-product launches and worked with technical teams on defect resolution.</li>
+          <li>Trained North and East region teams on variable products and servicing transactions.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="expertise" class="expertise">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">03 — Expertise</div><h2>Where insurance<br>meets product thinking.</h2></div>
+      <p class="section-intro">A practical blend of domain knowledge, product leadership, customer discovery and technology transformation.</p>
+    </div>
+    <div class="expertise-grid">
+      <div class="expert"><div class="expert-number">01</div><h3>Insurance Domain</h3><p>Retirement, Individual Life, Annuities, Supplemental &amp; Voluntary Benefits, Group Benefits, Commercial &amp; Personal Lines, Specialty Insurance and BFS.</p></div>
+      <div class="expert"><div class="expert-number">02</div><h3>Product Leadership</h3><p>Product strategy, vision, goals, requirements, prioritization, stakeholder alignment, delivery governance and continuous improvement.</p></div>
+      <div class="expert"><div class="expert-number">03</div><h3>Customer &amp; UX</h3><p>User research, business process flows, user journeys, workshops, interviews and close collaboration with UI/UX designers.</p></div>
+      <div class="expert"><div class="expert-number">04</div><h3>Agile Transformation</h3><p>Scrum Master experience, SAFe-based Agile transformation, team leadership, planning and delivery management.</p></div>
+      <div class="expert"><div class="expert-number">05</div><h3>Enterprise Solutions</h3><p>Business-to-technology transformation, solution definition, data/interface analysis and policy administration ecosystems.</p></div>
+      <div class="expert"><div class="expert-number">06</div><h3>AI Product Focus</h3><p>Current focus on AI product development within specialty insurance and insurance application value streams.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">04 — Credentials</div><h2>Continuous learning,<br>grounded in delivery.</h2></div>
+      <p class="section-intro">Professional certifications and recent AI-focused learning supporting a product leadership career.</p>
+    </div>
+    <div class="education-grid">
+      <div class="edu"><strong>SAFe 5 POPM</strong><span>Scaled Agile · November 2021</span></div>
+      <div class="edu"><strong>AI Builder Sprint 2026</strong><span>HelloPM · AI Project Management</span></div>
+      <div class="edu"><strong>Leading SAFe 4.6</strong><span>Scaled Agile</span></div>
+      <div class="edu"><strong>POPM — SAFe 5.0</strong><span>Scaled Agile · 2020</span></div>
+      <div class="edu"><strong>Certified ScrumMaster</strong><span>Scrum Alliance · Agile</span></div>
+      <div class="edu"><strong>Core Skills</strong><span>Agile Methodologies · Requirements Analysis · Business Analysis</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-card">
+      <div>
+        <div class="kicker">05 — Connect</div>
+        <h2>Interested in insurance, AI or product transformation?</h2>
+        <p>Let's connect and exchange ideas on building practical products that solve real business problems.</p>
+      </div>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:vijenderbansal@yahoo.com">✉ vijenderbansal@yahoo.com</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/vijender-bansal-169a614" target="_blank" rel="noopener">in LinkedIn profile ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Vijender Bansal</span>
+    <span>Insurance · AI · Product</span>
+  </div>
+</footer>
+</body>
+</html>
